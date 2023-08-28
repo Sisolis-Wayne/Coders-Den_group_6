@@ -39,24 +39,49 @@ ul li a {
     padding-block: 20px;
 }
 
-.left-nav-div, .right-nav-div {
+/*.left-nav-div, */.right-nav-div {
     align-items: center;
 }
 
 .left-nav-div img {
+    cursor: pointer;
     margin-right: 13px;
+    /* width: 44px;
+    height: 40.25927734375px; */
+    /* width: 42px;
+    height: 39.2593px; */
+    width: 38px;
+    aspect-ratio: 1;
+}
+
+.left-nav-div h1 {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.right-nav-div h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .right-nav-div img {
+    cursor: pointer;
     margin-left: 13px;
     border: 3px solid #CDCCCC;
     border-radius: 50%;
+    width: 49px;
+    aspect-ratio: 1;
 }
 
 .main-section {
     width: 50%;
     margin: auto;
     justify-content: center;
+    cursor: pointer;
     border: 1px solid rgba(155, 152, 152, 1);
     padding-top: 30px;
     padding-bottom: 19px;
@@ -68,6 +93,13 @@ ul li a {
 
 .user-card, .user-feed {
     margin-bottom: 20px;
+}
+
+.user-feed h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .user-card {
@@ -83,19 +115,255 @@ ul li a {
     align-items: center;
 }
 
+.user-div > p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
+
 .user-div img {
     margin-right: 13px;
+    width: 49px;
 }
 
 .user-card .user-div, .user-card > p {
     margin-bottom: 15px;
 }
 
+.user-card > p, .user-option p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(81, 81, 81, 1);
+}
+
+.user-option {
+    align-items: center;
+}
+
 .user-option li:nth-child(1), .user-option li:nth-child(2), .user-option li:nth-child(3), .user-option li:nth-child(4) {
     margin-right: 5px;
 }
 
-@media (max-width: 870px) {
+/* styling for profile page */
+
+.profile-main-section {
+    width: 77.5%;
+    margin: auto;
+    justify-content: center;
+    border: 1px solid rgba(155, 152, 152, 1);
+    padding-top: 30px;
+    padding-bottom: 41px;
+    padding-inline: 47px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: #97979740 0px 2px 3px 2px, #97979740 0px -2px 3px 2px;
+}
+
+.profile-card-white-bg {
+    background: #fff;
+    border-radius: 20px;
+    padding-top: 26px;
+    padding-left: 78px;
+    padding-right: 66px;
+    padding-bottom: 52px;
+}
+
+.profile-text {
+    margin: 10px;
+    text-align: right;
+}
+
+.profile-text button {
+    padding-block: 5px;
+    padding-inline: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.profile-text button:hover {
+    background: #a0a0a0;
+    color: #fff;
+    /* background: rgba(239, 239, 239, 1); */
+}
+
+
+.profile-card-white-bg-img img {
+    border: 3px solid #CDCCCC;
+    border-radius: 50%;
+}
+
+.details-div {
+    align-items: center;
+}
+
+.details-div div:nth-child(1) {
+    margin-right: 42px;
+}
+
+.details-div div:nth-child(2) {
+    padding-right: 30px;
+}
+
+.details-div div:nth-child(2) > p {
+    margin-top: 28px;
+    margin-bottom: 24px;
+    font-size: 25px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 1);
+}
+
+.details-div div:nth-child(2) > h2 {
+    font-size: 45px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.details-div div:nth-child(2) > div {
+   margin-bottom: 10px;
+}
+
+.details-div div:nth-child(2) > div p:nth-child(1){
+    margin-right: 15px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.details-div div:nth-child(2) > div p:nth-child(2){
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+}
+
+.handle-div h3 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 46px;
+    margin-bottom: 17px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.handle-div > div div:nth-child(n) {
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.handle-div > div div:nth-child(n) img {
+    margin-right: 15px;
+}
+
+.handle-div > div div:nth-child(n) img[alt="linkedIn logo"] {
+    margin-right: 21px;
+}
+
+.handle-div > div div:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 946px) {
     .main-section {
         width: 90%;
         font-size: 9px;
@@ -103,3 +371,5 @@ ul li a {
     }
     
 }
+
+
