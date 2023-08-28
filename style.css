@@ -39,7 +39,7 @@ ul li a {
     padding-block: 20px;
 }
 
-/*.left-nav-div, */.right-nav-div {
+.left-nav-div, .right-nav-div {
     align-items: center;
 }
 
@@ -149,7 +149,7 @@ ul li a {
 /* styling for profile page */
 
 .profile-main-section {
-    width: 77.5%;
+    width: 81%;
     margin: auto;
     justify-content: center;
     border: 1px solid rgba(155, 152, 152, 1);
@@ -197,6 +197,8 @@ ul li a {
 .profile-card-white-bg-img img {
     border: 3px solid #CDCCCC;
     border-radius: 50%;
+    width: 210px;
+    aspect-ratio: 1;
 }
 
 .details-div {
@@ -204,55 +206,65 @@ ul li a {
 }
 
 .details-div div:nth-child(1) {
-    margin-right: 42px;
+    margin-right: 35px;
 }
 
 .details-div div:nth-child(2) {
-    padding-right: 30px;
+    padding-right: 35px;
 }
 
 .details-div div:nth-child(2) > p {
-    margin-top: 28px;
-    margin-bottom: 24px;
-    font-size: 25px;
+    padding-right: 30px;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: rgba(81, 81, 81, 1);
 }
 
 .details-div div:nth-child(2) > h2 {
-    font-size: 45px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: 23px;
     font-weight: 400;
     color: rgba(0, 0, 0, 1);
 }
 
 .details-div div:nth-child(2) > div {
-   margin-bottom: 10px;
+   margin-bottom: 0px;
 }
 
 .details-div div:nth-child(2) > div p:nth-child(1){
-    margin-right: 15px;
-    font-size: 22px;
+    margin-right: 9px;
+    font-size: 13px;
     line-height: 26px;
     font-weight: 400;
     color: rgba(0, 0, 0, 1);
 }
 
 .details-div div:nth-child(2) > div p:nth-child(2){
-    font-size: 22px;
+    font-size: 13px;
     line-height: 26px;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
 }
 
 .handle-div h3 {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 19px;
+    line-height: 23px;
     font-weight: 400;
-    margin-top: 46px;
+    margin-top: 29px;
     margin-bottom: 17px;
     color: rgba(0, 0, 0, 1);
+}
+
+.handle-div p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(81, 81, 81, 1);
 }
 
 .handle-div > div div:nth-child(n) {
@@ -262,104 +274,16 @@ ul li a {
 
 .handle-div > div div:nth-child(n) img {
     margin-right: 15px;
+    width: 27px;
 }
 
 .handle-div > div div:nth-child(n) img[alt="linkedIn logo"] {
-    margin-right: 21px;
+    margin-right: 17px;
 }
 
 .handle-div > div div:last-child {
     margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -373,3 +297,71 @@ ul li a {
 }
 
 
+@media (max-width: 871px) {
+    .profile-main-section {
+        width: 90%;
+        margin: auto;
+        padding-inline: 21px;
+    }
+
+    .testing {
+        width: 100%
+    }
+
+    .profile-card-white-bg {
+        padding-inline: 30px;
+    }
+
+
+    .handle-div p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .profile-card-white-bg-img img {
+        width: 126px;
+    }
+
+    .details-div {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .details-div div:nth-child(1) {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .details-div div:nth-child(2) > h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    
+    .details-div div:nth-child(2) {
+        padding-right: 0;
+    }
+   
+    .details-div div:nth-child(2) > p {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: justify;
+        padding-right: 23px;
+        /* width: 265px; */
+    }
+
+    .handle-div h3 {
+        font-size: 12px;
+        line-height: 26px;
+        font-weight: 500;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+
+    .handle-div > div div:nth-child(n) img {
+        width: 21px;
+    }
+}
