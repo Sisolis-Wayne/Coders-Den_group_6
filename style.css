@@ -22,10 +22,16 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
 ul li a {
     color: black;
     filter: invert(0);
 }
+
 
 .nav-line {
     border-bottom: 1.5px solid #9B9898;
